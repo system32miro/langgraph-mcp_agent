@@ -1,0 +1,30 @@
+# This YAML was auto-generated based on an architecture 
+# designed in LangGraph Builder (https://build.langchain.com).
+#
+# The YAML was used by langgraph-gen (https://github.com/langchain-ai/langgraph-gen-py) 
+# to generate a code stub for a LangGraph application that follows the architecture.
+#
+# langgraph-gen is an open source CLI tool that converts YAML specifications into LangGraph code stubs.
+#
+# The code stub generated from this YAML can be found in stub.py.
+#
+# A placeholder implementation for the generated stub can be found in implementation.py.
+
+name: CustomAgent
+nodes:
+  - name: supervisor
+  - name:  react_agent
+  - name: code_act
+  - name: final_answer
+edges:
+  - from: __start__
+    to: supervisor
+  - from: final_answer
+    to: __end__
+  - from:  react_agent
+    to: final_answer
+  - from: code_act
+    to: final_answer
+  - from: supervisor
+    condition: conditional_edge_1
+    paths: [ react_agent, code_act]

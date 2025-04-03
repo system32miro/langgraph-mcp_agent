@@ -1,0 +1,35 @@
+# Ficheiros sensíveis com chaves API
+.env
+*.env
+
+# Ficheiros de cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambiente virtual
+venv/
+env/
+ENV/
+
+# Ficheiros de distribuição
+*.egg-info/
+dist/
+build/
+
+# Ficheiros de logs
+*.log
+
+# Ficheiros específicos do sistema
+.DS_Store
+Thumbs.db
+
+# Ficheiros IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ficheiros de base de dados SQLite
+*.sqlite
+*.db 
