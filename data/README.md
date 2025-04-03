@@ -1,5 +1,5 @@
-# Pasta de Dados
+# Data Directory
 
-Esta pasta contém os ficheiros de dados utilizados pelo LangGraph Agent, incluindo a base de dados SQLite para demonstrações de consultas SQL.
+This directory contains data files used by the LangGraph Agent.
 
-Por padrão, o sistema espera um ficheiro 'travel.sqlite' nesta pasta para executar exemplos de consultas SQL.
+By default, the system expects a `travel.sqlite` database file here to run SQL query examples using the corresponding MCP server. Place any other necessary data resources in this folder.
