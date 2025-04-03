@@ -63,16 +63,16 @@ This project implements an intelligent agent built using LangGraph, leveraging A
     ```
 
 3.  **Install Dependencies:**
-    A `requirements.txt` file is recommended. If you don't have one, create it with the following content:
+    A `requirements.txt` file is provided with the following dependencies:
     ```txt
-    langgraph
-    langchain-core
-    langchain-anthropic
-    langchain-mcp-adapters @ git+https://github.com/ManusMCP/langchain-mcp-adapters.git # Or specify a released version if available
-    python-dotenv
-    # Add other specific dependencies if needed (e.g., for MCP servers)
+    langchain-core>=0.1.0
+    langgraph>=0.0.20
+    langchain-anthropic>=0.1.1
+    python-dotenv>=1.0.0
+    pydantic>=2.0.0
+    langchain-mcp-adapters>=0.0.1
     ```
-    Then install:
+    Install with:
     ```bash
     pip install -r requirements.txt
     ```
@@ -95,32 +95,32 @@ This project implements an intelligent agent built using LangGraph, leveraging A
 
 ## Project Structure
 
-- `implementation.py`: Implementação principal do agente
-- `stub.py`: Stub do CustomAgent para integração com LangGraph
-- `spec.yml`: Especificação do agente
-- `mcp-servers/`: Servidores MCP para ferramentas específicas
-- `data/`: Base de dados e outros recursos
+- `implementation.py`: Main agent implementation
+- `stub.py`: CustomAgent stub for LangGraph integration
+- `spec.yml`: Agent specification
+- `mcp-servers/`: MCP servers for specific tools
+- `data/`: Database and other resources
 
-## Uso
+## Usage
 
-Execute o agente com:
+Run the agent with:
 
 ```bash
 python implementation.py
 ```
 
-O sistema executará automaticamente exemplos de teste com diferentes cenários.
+The system will automatically execute test examples with different scenarios.
 
-## Exemplos de Consultas
+## Example Queries
 
-- "Qual é o tempo em Lisboa?"
-- "Qual é o tempo no Porto e calcula a soma de 10 e 5?"
-- "Lista as tabelas da base de dados de viagens"
+- "What's the weather in Lisbon?"
+- "What's the weather in Porto and calculate the sum of 10 and 5?"
+- "List the tables in the travel database"
 
-## Licença
+## License
 
 [MIT](LICENSE)
 
-## Contribuições
+## Contributions
 
-Contribuições são bem-vindas! Por favor, sinta-se à vontade para submeter um Pull Request. 
+Contributions are welcome! Please feel free to submit a Pull Request. 
